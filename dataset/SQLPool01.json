@@ -1,0 +1,21 @@
+{
+	"name": "SQLPool01",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SQLPool01",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"TableName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "wwi",
+			"table": "@dataset().TableName"
+		}
+	}
+}
